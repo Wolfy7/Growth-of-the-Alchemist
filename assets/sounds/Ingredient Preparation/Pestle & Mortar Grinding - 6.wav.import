@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bkwe5drf5l64v"
+path="res://.godot/imported/Pestle & Mortar Grinding - 6.wav-df2c5c68b56ce327e3bc562d9cb24028.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Pestle & Mortar Grinding - 6.wav"
+dest_files=["res://.godot/imported/Pestle & Mortar Grinding - 6.wav-df2c5c68b56ce327e3bc562d9cb24028.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

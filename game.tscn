@@ -1,0 +1,812 @@
+[gd_scene load_steps=91 format=3 uid="uid://lvobx5rah0ig"]
+
+[ext_resource type="PackedScene" uid="uid://dg4gsittjlxt2" path="res://caldron.tscn" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://lxewbg26m1gu" path="res://game.gd" id="1_ryrav"]
+[ext_resource type="PackedScene" uid="uid://dipnwh1ju5nwe" path="res://alchemist.tscn" id="2_eow3j"]
+[ext_resource type="Resource" uid="uid://cllwqrvkrroer" path="res://ingredients/green_leaf.tres" id="4_80cx4"]
+[ext_resource type="Resource" uid="uid://dfpfbq58la6x8" path="res://ingredients/blood_berries.tres" id="5_aa0lp"]
+[ext_resource type="Resource" uid="uid://b7u7160ltujqf" path="res://ingredients/sun_core.tres" id="6_iu0sx"]
+[ext_resource type="Resource" uid="uid://dtr8ta6f5lq3u" path="res://ingredients/gray_marrow_mushroom.tres" id="7_4v2jo"]
+[ext_resource type="PackedScene" uid="uid://dplm2xca203x5" path="res://tile_map.tscn" id="8_e8heu"]
+[ext_resource type="PackedScene" uid="uid://bkebnxo11mql6" path="res://ingredient_button.tscn" id="8_hve3p"]
+[ext_resource type="Resource" uid="uid://svfiqywnr7p5" path="res://ingredients/haze_bark.tres" id="8_l1i01"]
+[ext_resource type="PackedScene" uid="uid://4qtymgqdhu16" path="res://fire.tscn" id="9_iotsf"]
+[ext_resource type="Resource" uid="uid://bbfyuxy8utcm1" path="res://ingredients/frost_crystal_algae.tres" id="9_r62pu"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="10_iotsf"]
+[ext_resource type="Resource" uid="uid://b7jgn04tjeje" path="res://ingredients/nightclaw.tres" id="10_klri6"]
+[ext_resource type="Resource" uid="uid://pep7csjrq55i" path="res://ingredients/scarlet_thorn.tres" id="11_eu6ph"]
+[ext_resource type="Resource" uid="uid://cm6l63gbef0v8" path="res://ingredients/amber_moss.tres" id="12_edr7y"]
+[ext_resource type="PackedScene" uid="uid://0qecwe14vshq" path="res://book.tscn" id="12_lc2xo"]
+[ext_resource type="Resource" uid="uid://d28iuvcmcfhgc" path="res://ingredients/echo_core.tres" id="13_kq12w"]
+[ext_resource type="Resource" uid="uid://dkr31swsb4vbq" path="res://ingredients/thistle_of_dreams.tres" id="14_t46w6"]
+[ext_resource type="Texture2D" uid="uid://my8h8th0roxf" path="res://assets/potion_bottle_content.png" id="15_7sc4i"]
+[ext_resource type="Resource" uid="uid://bpiagj1r3o4s8" path="res://ingredients/snakeweed.tres" id="15_m28ev"]
+[ext_resource type="PackedScene" uid="uid://b0kwvdlrofv8y" path="res://recipes_book.tscn" id="16_80cx4"]
+[ext_resource type="Texture2D" uid="uid://ctqtxe62v2fxt" path="res://assets/tileset-dungeon.png" id="16_e8heu"]
+[ext_resource type="Resource" uid="uid://ddrum20uefp74" path="res://ingredients/fruit_of_the_gods.tres" id="16_lwlx3"]
+[ext_resource type="Resource" uid="uid://bjbld0nx48d34" path="res://ingredients/wisp_sprouts.tres" id="17_0de7l"]
+[ext_resource type="Resource" uid="uid://dfoww7gnwueq0" path="res://ingredients/blood_vein_tendril.tres" id="18_87ddb"]
+[ext_resource type="Resource" uid="uid://c6cyhsbu0530m" path="res://ingredients/shade_vine_green.tres" id="19_mljfx"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="20_xfvwf"]
+[ext_resource type="PackedScene" uid="uid://brqunlx5mad3k" path="res://potions/generation.tscn" id="26_r62pu"]
+[ext_resource type="Texture2D" uid="uid://dheoegjsrrccl" path="res://assets/particles/circle_01.png" id="27_fuuk6"]
+[ext_resource type="Texture2D" uid="uid://b3jlce7mir2h4" path="res://assets/particles/circle_02.png" id="28_cwgap"]
+[ext_resource type="AudioStream" uid="uid://16nraasbx60y" path="res://assets/sounds/1761645-Carlos_Estella_Fernandez-Gregorian Chant.ogg" id="29_36jdj"]
+[ext_resource type="Texture2D" uid="uid://cea3cnngwo3go" path="res://assets/particles/circle_03.png" id="29_svdf4"]
+[ext_resource type="AudioStream" uid="uid://dsaolxxhxmd13" path="res://assets/sounds/Potion Completion/Potion Completion - 1.mp3" id="30_36jdj"]
+[ext_resource type="Texture2D" uid="uid://daek40j344sux" path="res://assets/particles/circle_04.png" id="30_lh772"]
+[ext_resource type="Texture2D" uid="uid://bku8vgjqd0om4" path="res://assets/particles/circle_05.png" id="31_66xay"]
+[ext_resource type="Texture2D" uid="uid://d0vl7ciitfy5u" path="res://assets/particles/dirt_01.png" id="32_0s2o4"]
+[ext_resource type="Texture2D" uid="uid://dojmysjh1144t" path="res://assets/particles/dirt_02.png" id="33_4mai8"]
+[ext_resource type="Texture2D" uid="uid://xggu67t4si8l" path="res://assets/particles/dirt_03.png" id="34_w37fy"]
+[ext_resource type="Script" uid="uid://dahpvivvdu48m" path="res://tutorial.gd" id="35_4v2jo"]
+[ext_resource type="Texture2D" uid="uid://bq7bjdfm8nvmi" path="res://assets/particles/fire_01.png" id="35_7x3ck"]
+[ext_resource type="Texture2D" uid="uid://dygfhh1f7d6dj" path="res://assets/textbox.png" id="35_iu0sx"]
+[ext_resource type="FontFile" uid="uid://brmsnllaoh2ig" path="res://assets/fonts/CaslonAntique.ttf" id="36_4v2jo"]
+[ext_resource type="Texture2D" uid="uid://d24352md4at14" path="res://assets/particles/fire_02.png" id="36_vvpk2"]
+[ext_resource type="FontFile" uid="uid://uq8w0oieowxm" path="res://assets/fonts/MorrisRomanAlternate-Black.ttf" id="37_l1i01"]
+[ext_resource type="Texture2D" uid="uid://bao8fyny6kqhv" path="res://assets/particles/light_01.png" id="37_o46vb"]
+[ext_resource type="Texture2D" uid="uid://ds0spkml586ja" path="res://assets/particles/light_02.png" id="38_vqo61"]
+[ext_resource type="Texture2D" uid="uid://bdx5dyfhr7bvf" path="res://assets/particles/light_03.png" id="39_pwsyv"]
+[ext_resource type="Texture2D" uid="uid://hykfglvba0c" path="res://assets/particles/magic_03.png" id="40_lon8v"]
+[ext_resource type="Texture2D" uid="uid://t1wbfudhn2hb" path="res://assets/particles/magic_04.png" id="41_r3ggl"]
+[ext_resource type="Texture2D" uid="uid://byndjs0katua5" path="res://assets/particles/magic_05.png" id="42_sueei"]
+[ext_resource type="Texture2D" uid="uid://fppu7hasoq2i" path="res://assets/particles/scorch_01.png" id="43_qhxlk"]
+[ext_resource type="Texture2D" uid="uid://cmkdl02fnm6wm" path="res://assets/particles/scorch_02.png" id="44_qw2kp"]
+[ext_resource type="Texture2D" uid="uid://cxrxq8wv3pti6" path="res://assets/particles/scorch_03.png" id="45_ftkif"]
+[ext_resource type="Texture2D" uid="uid://cvlkjui7ngwri" path="res://assets/particles/smoke_01.png" id="46_71bxy"]
+[ext_resource type="Texture2D" uid="uid://doh7xydgutbc6" path="res://assets/particles/smoke_02.png" id="47_8jd3k"]
+[ext_resource type="Texture2D" uid="uid://d3swfmjagx0bo" path="res://assets/particles/smoke_03.png" id="48_tssr6"]
+[ext_resource type="Texture2D" uid="uid://g3t2adj0sid4" path="res://assets/particles/smoke_04.png" id="49_i3uta"]
+[ext_resource type="Texture2D" uid="uid://cr3qe3583lmlw" path="res://assets/particles/smoke_10.png" id="50_hl454"]
+[ext_resource type="Texture2D" uid="uid://dvmr0v0bdj8x0" path="res://assets/particles/spark_02.png" id="51_vf1qt"]
+[ext_resource type="Texture2D" uid="uid://cnqwrjux5wlyx" path="res://assets/particles/spark_03.png" id="52_j4tta"]
+[ext_resource type="Texture2D" uid="uid://0orjgrdmlugh" path="res://assets/particles/spark_04.png" id="53_ell1s"]
+[ext_resource type="Texture2D" uid="uid://bft7c86lpenxi" path="res://assets/particles/spark_05.png" id="54_hsv4y"]
+[ext_resource type="Texture2D" uid="uid://cd8uimkvynvlh" path="res://assets/particles/star_01.png" id="55_lrvy0"]
+[ext_resource type="Texture2D" uid="uid://b1bnrkrxb655x" path="res://assets/particles/star_02.png" id="56_lea4x"]
+[ext_resource type="Texture2D" uid="uid://dyljuiygakjsf" path="res://assets/particles/star_03.png" id="57_oykgp"]
+[ext_resource type="Texture2D" uid="uid://gt615ambcb5b" path="res://assets/particles/star_04.png" id="58_nliq0"]
+[ext_resource type="Texture2D" uid="uid://cq7yglpvvsap2" path="res://assets/particles/star_05.png" id="59_5ru8x"]
+[ext_resource type="Texture2D" uid="uid://r3d0gvemj0dg" path="res://assets/particles/star_06.png" id="60_oo6xx"]
+[ext_resource type="Texture2D" uid="uid://bvb6f3vf11wh6" path="res://assets/particles/star_07.png" id="61_y7j3j"]
+[ext_resource type="Texture2D" uid="uid://sbmeje8uulej" path="res://assets/particles/star_08.png" id="62_e3l5k"]
+[ext_resource type="Texture2D" uid="uid://c4pnlufk6xte6" path="res://assets/particles/star_09.png" id="63_epi3u"]
+[ext_resource type="PackedScene" uid="uid://pokmydotp4i7" path="res://xp_bar.tscn" id="72_t2ssd"]
+
+[sub_resource type="Environment" id="Environment_iotsf"]
+background_mode = 3
+glow_enabled = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_082n1"]
+atlas = ExtResource("16_e8heu")
+region = Rect2(768, 1536, 128, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7knny"]
+atlas = ExtResource("16_e8heu")
+region = Rect2(896, 1536, 128, 96)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iu0sx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4v2jo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l1i01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klri6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eu6ph"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_edr7y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kq12w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t46w6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m28ev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lwlx3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r62pu"]
+
+[sub_resource type="Animation" id="Animation_xex6t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/QuestPopup:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/QuestPopup:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_iu0sx"]
+resource_name = "hide_quest"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/QuestPopup:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/QuestPopup:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.533333, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aa0lp"]
+_data = {
+&"RESET": SubResource("Animation_xex6t"),
+&"hide_quest": SubResource("Animation_iu0sx")
+}
+
+[node name="Game" type="Node"]
+script = ExtResource("1_ryrav")
+ingredient_button_scene = ExtResource("8_hve3p")
+inventory = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev"), ExtResource("16_lwlx3"), ExtResource("17_0de7l"), ExtResource("18_87ddb"), ExtResource("19_mljfx")])
+
+[node name="Node" parent="." instance=ExtResource("26_r62pu")]
+level4 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01")])
+level5 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu")])
+level6 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6")])
+level7 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph")])
+level8 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y")])
+level9 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w")])
+level10 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6")])
+level11 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev")])
+level12 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev"), ExtResource("16_lwlx3")])
+level13 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev"), ExtResource("16_lwlx3"), ExtResource("17_0de7l")])
+level14 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev"), ExtResource("16_lwlx3"), ExtResource("17_0de7l"), ExtResource("18_87ddb")])
+level15 = Array[ExtResource("10_iotsf")]([ExtResource("4_80cx4"), ExtResource("5_aa0lp"), ExtResource("6_iu0sx"), ExtResource("7_4v2jo"), ExtResource("8_l1i01"), ExtResource("9_r62pu"), ExtResource("10_klri6"), ExtResource("11_eu6ph"), ExtResource("12_edr7y"), ExtResource("13_kq12w"), ExtResource("14_t46w6"), ExtResource("15_m28ev"), ExtResource("16_lwlx3"), ExtResource("17_0de7l"), ExtResource("18_87ddb"), ExtResource("19_mljfx")])
+particles = Array[Texture]([ExtResource("27_fuuk6"), ExtResource("28_cwgap"), ExtResource("29_svdf4"), ExtResource("30_lh772"), ExtResource("31_66xay"), ExtResource("32_0s2o4"), ExtResource("33_4mai8"), ExtResource("34_w37fy"), ExtResource("35_7x3ck"), ExtResource("36_vvpk2"), ExtResource("37_o46vb"), ExtResource("38_vqo61"), ExtResource("39_pwsyv"), ExtResource("40_lon8v"), ExtResource("41_r3ggl"), ExtResource("42_sueei"), ExtResource("43_qhxlk"), ExtResource("44_qw2kp"), ExtResource("45_ftkif"), ExtResource("46_71bxy"), ExtResource("47_8jd3k"), ExtResource("48_tssr6"), ExtResource("49_i3uta"), ExtResource("50_hl454"), ExtResource("51_vf1qt"), ExtResource("52_j4tta"), ExtResource("53_ell1s"), ExtResource("54_hsv4y"), ExtResource("55_lrvy0"), ExtResource("56_lea4x"), ExtResource("57_oykgp"), ExtResource("58_nliq0"), ExtResource("59_5ru8x"), ExtResource("60_oo6xx"), ExtResource("61_y7j3j"), ExtResource("62_e3l5k"), ExtResource("63_epi3u")])
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_iotsf")
+
+[node name="TileMap" parent="." instance=ExtResource("8_e8heu")]
+position = Vector2(0, 10)
+
+[node name="Fire" parent="TileMap" instance=ExtResource("9_iotsf")]
+position = Vector2(816, 700)
+scale = Vector2(2, 2)
+
+[node name="caldron" parent="TileMap" instance=ExtResource("1_e2o6t")]
+position = Vector2(816, 590)
+scale = Vector2(1.5, 1.5)
+
+[node name="alchemist" parent="." instance=ExtResource("2_eow3j")]
+z_index = 10
+y_sort_enabled = true
+position = Vector2(591, 532)
+
+[node name="recipes_book" parent="." instance=ExtResource("16_80cx4")]
+position = Vector2(1024, 76)
+scale = Vector2(0.5, 0.5)
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 784.0
+offset_top = 409.0
+offset_right = 849.0
+offset_bottom = 440.0
+text = "Brauen"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(726, 674)
+texture = ExtResource("16_e8heu")
+region_enabled = true
+region_rect = Rect2(256, 1208, 128, 72)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(906, 673)
+texture = ExtResource("16_e8heu")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(256, 1208, 128, 72)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_36jdj")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(812, 536)
+stream = ExtResource("30_36jdj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 52.0
+offset_top = 53.0
+offset_right = 1132.0
+offset_bottom = 776.0
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/v_separation = 60
+columns = 4
+
+[node name="Vials" type="GridContainer" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.0
+offset_top = 66.0
+offset_right = 1007.0
+offset_bottom = 756.0
+grow_horizontal = 2
+scale = Vector2(0.3, 0.3)
+theme_override_constants/h_separation = 260
+theme_override_constants/v_separation = 220
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="TextureRect6" type="TextureRect" parent="CanvasLayer/Vials"]
+layout_mode = 2
+texture = ExtResource("15_7sc4i")
+
+[node name="QuestInfoButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 960.0
+offset_top = 587.0
+offset_right = 1088.0
+offset_bottom = 675.0
+texture_normal = SubResource("AtlasTexture_082n1")
+
+[node name="InfoButton" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 65.0
+offset_top = 586.0
+offset_right = 193.0
+offset_bottom = 682.0
+texture_normal = SubResource("AtlasTexture_7knny")
+
+[node name="CaldronLabel" type="Label" parent="CanvasLayer"]
+offset_left = 763.0
+offset_top = 636.0
+offset_right = 872.0
+offset_bottom = 671.0
+theme_override_fonts/font = ExtResource("37_l1i01")
+theme_override_font_sizes/font_size = 42
+text = "0 / 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PopupBackground" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.446777, 0.446777, 0.446777, 0.529412)
+
+[node name="PotionSpot" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1086.0
+offset_top = 460.0
+offset_right = 1086.0
+offset_bottom = 461.0
+
+[node name="QuestPopup" type="TextureRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -99.0
+offset_bottom = 117.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_iu0sx")
+expand_mode = 1
+
+[node name="QuestText" type="RichTextLabel" parent="CanvasLayer/QuestPopup"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -54.0
+offset_right = 503.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+text = "Erstelle einen Heiltrank."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestText2" type="RichTextLabel" parent="CanvasLayer/QuestPopup"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -323.0
+offset_top = 9.0
+offset_right = -96.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+text = "Color:"
+fit_content = true
+vertical_alignment = 1
+
+[node name="QuestColor" type="ColorRect" parent="CanvasLayer/QuestPopup/QuestText2"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = 16.0
+offset_right = -8.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="QuestText3" type="RichTextLabel" parent="CanvasLayer/QuestPopup"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -612.0
+offset_top = 9.0
+offset_right = -385.0
+offset_bottom = 89.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+text = "Ingredients: "
+fit_content = true
+vertical_alignment = 1
+
+[node name="QuestIngredients" type="RichTextLabel" parent="CanvasLayer/QuestPopup/QuestText3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -40.0
+offset_right = -23.0
+offset_bottom = 40.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+text = "3"
+fit_content = true
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="QuestPopupButton" type="Button" parent="CanvasLayer/QuestPopup"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 301.0
+offset_top = -171.0
+offset_right = 386.0
+offset_bottom = -122.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("37_l1i01")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iu0sx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4v2jo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l1i01")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_klri6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_eu6ph")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_edr7y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kq12w")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t46w6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m28ev")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lwlx3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r62pu")
+text = "x"
+
+[node name="InfoPopUp" type="TextureRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -225.0
+offset_right = 34.0
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_iu0sx")
+expand_mode = 1
+
+[node name="InfoText" type="RichTextLabel" parent="CanvasLayer/InfoPopUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -111.5
+offset_right = 492.0
+offset_bottom = 157.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+bbcode_enabled = true
+text = "Ein Neuer Trank wurder erstellt!!
+
+[color=000000] CHAOS[/color]"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoPopupButton" type="Button" parent="CanvasLayer/InfoPopUp"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 377.0
+offset_top = -263.0
+offset_right = 462.0
+offset_bottom = -214.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("37_l1i01")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iu0sx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4v2jo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l1i01")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_klri6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_eu6ph")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_edr7y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kq12w")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t46w6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m28ev")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lwlx3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r62pu")
+text = "x"
+
+[node name="Book" parent="CanvasLayer" instance=ExtResource("12_lc2xo")]
+visible = false
+recipes = Array[ExtResource("20_xfvwf")]([])
+
+[node name="Hint" type="TextureRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 190.0
+offset_top = -125.0
+offset_right = 507.0
+offset_bottom = -19.0
+grow_vertical = 0
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Hint"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.5
+offset_top = -22.0
+offset_right = 157.5
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("36_4v2jo")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="XpBar" parent="CanvasLayer" instance=ExtResource("72_t2ssd")]
+visible = false
+offset_left = 183.0
+offset_top = 667.0
+offset_right = 183.0
+offset_bottom = 667.0
+
+[node name="Tutorial" type="CanvasLayer" parent="."]
+script = ExtResource("35_4v2jo")
+
+[node name="ColorRect" type="ColorRect" parent="Tutorial"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.176419, 0.176419, 0.176419, 0.619608)
+
+[node name="Phiolen" type="ColorRect" parent="Tutorial/ColorRect"]
+visible = false
+layout_mode = 0
+offset_left = 499.0
+offset_top = 51.0
+offset_right = 914.0
+offset_bottom = 332.0
+color = Color(1, 1, 1, 0.184314)
+
+[node name="Ingredients" type="ColorRect" parent="Tutorial/ColorRect"]
+visible = false
+layout_mode = 0
+offset_left = 46.0
+offset_top = 59.0
+offset_right = 475.0
+offset_bottom = 632.0
+color = Color(1, 1, 1, 0.184314)
+
+[node name="Book" type="ColorRect" parent="Tutorial/ColorRect"]
+visible = false
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 41.0
+offset_right = 1172.0
+offset_bottom = 203.0
+color = Color(1, 1, 1, 0.184314)
+
+[node name="Quest" type="ColorRect" parent="Tutorial/ColorRect"]
+visible = false
+layout_mode = 0
+offset_left = 952.0
+offset_top = 595.0
+offset_right = 1098.0
+offset_bottom = 679.0
+color = Color(1, 1, 1, 0.184314)
+
+[node name="TextureRect" type="TextureRect" parent="Tutorial"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -169.0
+offset_right = 960.0
+offset_bottom = 169.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_iu0sx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -93.0
+offset_right = 566.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Tutorial/TextureRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = -74.0
+offset_right = -555.0
+offset_bottom = -25.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("37_l1i01")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iu0sx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4v2jo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l1i01")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_klri6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_eu6ph")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_edr7y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kq12w")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t46w6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m28ev")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lwlx3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r62pu")
+text = "->"
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.176419, 0.176419, 0.176419, 0.619608)
+
+[node name="TextureRect" type="TextureRect" parent="GameOver"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -111.0
+offset_right = 960.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_iu0sx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GameOver/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -99.5
+offset_right = 583.0
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 104
+bbcode_enabled = true
+text = "[color=900101]G[/color]ame [color=900101]O[/color]ver "
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOverRecipes" type="RichTextLabel" parent="GameOver/TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -402.0
+offset_top = -70.0
+offset_right = 402.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/normal_font = ExtResource("36_4v2jo")
+theme_override_font_sizes/normal_font_size = 42
+bbcode_enabled = true
+text = "Recipe book has grown to [color=900101]80[/color] potion recipes"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TryAgainButton" type="Button" parent="GameOver/TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -121.0
+offset_right = 120.0
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("37_l1i01")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iu0sx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4v2jo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l1i01")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_klri6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_eu6ph")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_edr7y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kq12w")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t46w6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m28ev")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lwlx3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r62pu")
+text = "Main Menu"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_aa0lp")
+}
+
+[connection signal="pressed" from="TileMap/caldron/TextureButton" to="." method="_on_brew_button_pressed"]
+[connection signal="pressed" from="recipes_book/Node2D/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_brew_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/QuestInfoButton" to="." method="_on_quest_info_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/QuestPopup/QuestPopupButton" to="." method="_on_quest_popup_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/InfoPopUp/InfoPopupButton" to="." method="_on_info_popup_button_pressed"]
+[connection signal="pressed" from="Tutorial/TextureRect/Button" to="Tutorial" method="_on_button_pressed"]
+[connection signal="pressed" from="GameOver/TextureRect/TryAgainButton" to="." method="_on_try_again_button_pressed"]
+
+[editable path="TileMap"]
+[editable path="TileMap/caldron"]
+[editable path="recipes_book"]
+[editable path="CanvasLayer/XpBar"]

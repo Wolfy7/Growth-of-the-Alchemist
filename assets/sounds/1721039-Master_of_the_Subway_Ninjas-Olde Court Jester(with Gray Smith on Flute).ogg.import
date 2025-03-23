@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqjqyee33p4i4"
+path="res://.godot/imported/1721039-Master_of_the_Subway_Ninjas-Olde Court Jester(with Gray Smith on Flute).ogg-f9bc7564aed589b287ef0720e9c2a609.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/1721039-Master_of_the_Subway_Ninjas-Olde Court Jester(with Gray Smith on Flute).ogg"
+dest_files=["res://.godot/imported/1721039-Master_of_the_Subway_Ninjas-Olde Court Jester(with Gray Smith on Flute).ogg-f9bc7564aed589b287ef0720e9c2a609.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

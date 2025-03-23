@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcyqme4n6vmy1"
+path="res://.godot/imported/Pestle & Mortar Grinding - 1 (Single 1).mp3-f839ebf69824f22bebbde969888f0c4c.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Pestle & Mortar Grinding - 1 (Single 1).mp3"
+dest_files=["res://.godot/imported/Pestle & Mortar Grinding - 1 (Single 1).mp3-f839ebf69824f22bebbde969888f0c4c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

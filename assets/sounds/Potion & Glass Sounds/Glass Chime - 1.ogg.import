@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djt4krkh1p4bs"
+path="res://.godot/imported/Glass Chime - 1.ogg-f4d0ecd57ae80d3fd355439e033a8b5d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Potion & Glass Sounds/Glass Chime - 1.ogg"
+dest_files=["res://.godot/imported/Glass Chime - 1.ogg-f4d0ecd57ae80d3fd355439e033a8b5d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

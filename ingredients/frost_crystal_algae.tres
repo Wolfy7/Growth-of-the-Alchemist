@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://bbfyuxy8utcm1"]
+
+[ext_resource type="Texture2D" uid="uid://uo524u6wysoa" path="res://assets/plants/22.png" id="1_lpw33"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_v0hie"]
+
+[resource]
+script = ExtResource("2_v0hie")
+name = "Frost crystal algae"
+color = Color(0.305882, 0.662745, 0.894118, 1)
+coloring = 0.4
+icon = ExtResource("1_lpw33")
+tooltip = "Frost crystal algae"
+unknown = true
+level_unlock = 5
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

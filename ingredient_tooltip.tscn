@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://catwtyf314lic"]
+
+[ext_resource type="FontFile" uid="uid://brmsnllaoh2ig" path="res://assets/fonts/CaslonAntique.ttf" id="1_bmkrd"]
+
+[node name="IngredientTooltip" type="Control"]
+custom_minimum_size = Vector2(320, 320)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 400.0
+offset_bottom = 400.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 0
+offset_right = 347.0
+offset_bottom = 168.0
+theme_override_fonts/normal_font = ExtResource("1_bmkrd")
+theme_override_fonts/bold_font = ExtResource("1_bmkrd")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 24
+bbcode_enabled = true
+text = "[b]Test[/b]
+- asdas
+- asdsa
+-asasdd
+"
+tab_size = 2

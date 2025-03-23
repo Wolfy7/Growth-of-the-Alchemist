@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgf65ii7ns12a"
+path="res://.godot/imported/Pour Liquid - 3.ogg-5e5217a48f3011037a396311841cc259.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Pour Liquid - 3.ogg"
+dest_files=["res://.godot/imported/Pour Liquid - 3.ogg-5e5217a48f3011037a396311841cc259.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

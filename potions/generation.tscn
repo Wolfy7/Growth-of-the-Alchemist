@@ -1,0 +1,23 @@
+[gd_scene load_steps=14 format=3 uid="uid://brqunlx5mad3k"]
+
+[ext_resource type="Script" uid="uid://diesscbhachfh" path="res://generation.gd" id="1_enu1f"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_8b1xw"]
+[ext_resource type="Resource" uid="uid://cllwqrvkrroer" path="res://ingredients/green_leaf.tres" id="3_5ij0o"]
+[ext_resource type="Resource" uid="uid://dfpfbq58la6x8" path="res://ingredients/blood_berries.tres" id="4_8ckdu"]
+[ext_resource type="Resource" uid="uid://dtr8ta6f5lq3u" path="res://ingredients/gray_marrow_mushroom.tres" id="6_3vf5l"]
+[ext_resource type="Resource" uid="uid://b7u7160ltujqf" path="res://ingredients/sun_core.tres" id="6_fa5r1"]
+[ext_resource type="Texture2D" uid="uid://dheoegjsrrccl" path="res://assets/particles/circle_01.png" id="7_xfa24"]
+[ext_resource type="Texture2D" uid="uid://dojmysjh1144t" path="res://assets/particles/dirt_02.png" id="8_5ij0o"]
+[ext_resource type="Texture2D" uid="uid://bao8fyny6kqhv" path="res://assets/particles/light_01.png" id="9_3vf5l"]
+[ext_resource type="Texture2D" uid="uid://hykfglvba0c" path="res://assets/particles/magic_03.png" id="10_tsx0u"]
+[ext_resource type="Texture2D" uid="uid://fppu7hasoq2i" path="res://assets/particles/scorch_01.png" id="11_r7q4v"]
+[ext_resource type="Texture2D" uid="uid://d3swfmjagx0bo" path="res://assets/particles/smoke_03.png" id="12_lronf"]
+[ext_resource type="PackedScene" uid="uid://ugc26jiyd0ql" path="res://potion.tscn" id="13_5ij0o"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_enu1f")
+level1 = Array[ExtResource("2_8b1xw")]([ExtResource("3_5ij0o"), ExtResource("4_8ckdu")])
+level2 = Array[ExtResource("2_8b1xw")]([ExtResource("3_5ij0o"), ExtResource("4_8ckdu"), ExtResource("6_fa5r1")])
+level3 = Array[ExtResource("2_8b1xw")]([ExtResource("3_5ij0o"), ExtResource("4_8ckdu"), ExtResource("6_fa5r1"), ExtResource("6_3vf5l")])
+particles = Array[Texture]([ExtResource("7_xfa24"), ExtResource("8_5ij0o"), ExtResource("9_3vf5l"), ExtResource("10_tsx0u"), ExtResource("11_r7q4v"), ExtResource("12_lronf")])
+potion_scene = ExtResource("13_5ij0o")

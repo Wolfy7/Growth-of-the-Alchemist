@@ -1,0 +1,151 @@
+[gd_scene load_steps=18 format=3 uid="uid://b0kwvdlrofv8y"]
+
+[ext_resource type="Texture2D" uid="uid://bks5mssb7dx11" path="res://assets/Book_Icon.png" id="1_c1wbv"]
+[ext_resource type="Texture2D" uid="uid://bpl8jatm82vnp" path="res://assets/herbs/1.png" id="2_fppfh"]
+[ext_resource type="Texture2D" uid="uid://byndjs0katua5" path="res://assets/particles/magic_05.png" id="2_t430h"]
+[ext_resource type="Texture2D" uid="uid://dvlo1b456kan0" path="res://assets/plants/10.png" id="3_jb8p4"]
+[ext_resource type="Texture2D" uid="uid://my8h8th0roxf" path="res://assets/potion_bottle_content.png" id="3_t430h"]
+[ext_resource type="Texture2D" uid="uid://4vnfas3u7jrq" path="res://assets/plants/14.png" id="4_us5un"]
+[ext_resource type="Texture2D" uid="uid://dtvgdktgiigbi" path="res://assets/herbs/19.png" id="6_3gixv"]
+[ext_resource type="Texture2D" uid="uid://cb5406xak3jku" path="res://assets/herbs/48.png" id="7_evlg3"]
+[ext_resource type="Texture2D" uid="uid://drs0u2v6v33kb" path="res://assets/herbs/42.png" id="8_toavy"]
+[ext_resource type="Texture2D" uid="uid://bf1uxoy6xnp4m" path="res://assets/herbs/47.png" id="9_3erdt"]
+[ext_resource type="Texture2D" uid="uid://svscpbfeok1r" path="res://assets/plants/46.png" id="11_qbf7n"]
+
+[sub_resource type="Animation" id="Animation_3x6vm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -24)]
+}
+
+[sub_resource type="Animation" id="Animation_ags4i"]
+resource_name = "idle"
+length = 0.6
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -10), Vector2(0, 0), Vector2(0, 10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a4yvt"]
+_data = {
+&"RESET": SubResource("Animation_3x6vm"),
+&"idle": SubResource("Animation_ags4i")
+}
+
+[sub_resource type="Gradient" id="Gradient_fppfh"]
+offsets = PackedFloat32Array(0.61875, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_t430h"]
+gradient = SubResource("Gradient_fppfh")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ags4i"]
+particle_flag_disable_z = true
+angle_min = 50.0
+angle_max = 150.0
+direction = Vector3(0, 0, 0)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 25.0
+linear_accel_max = 25.0
+scale_min = 0.8
+scale_max = 0.8
+color_ramp = SubResource("GradientTexture1D_t430h")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="recipes_book" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_a4yvt")
+}
+autoplay = "idle"
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, -24)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Node2D"]
+position = Vector2(140, 116)
+amount = 12
+texture = ExtResource("2_t430h")
+preprocess = 2.0
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_ags4i")
+
+[node name="TextureButton" type="TextureButton" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_c1wbv")
+
+[node name="10" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(97, 132)
+scale = Vector2(0.0929688, 0.0929688)
+texture = ExtResource("3_jb8p4")
+
+[node name="14" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(174, 162)
+scale = Vector2(0.08125, 0.08125)
+texture = ExtResource("4_us5un")
+
+[node name="1" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(170, 103)
+scale = Vector2(0.0996094, 0.0996094)
+texture = ExtResource("2_fppfh")
+
+[node name="19" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(110, 101)
+scale = Vector2(0.0890625, 0.0890625)
+texture = ExtResource("6_3gixv")
+
+[node name="48" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(141, 176)
+scale = Vector2(0.0773438, 0.0773438)
+texture = ExtResource("7_evlg3")
+
+[node name="42" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(182, 133)
+scale = Vector2(0.0851562, 0.0851562)
+texture = ExtResource("8_toavy")
+
+[node name="47" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(109, 164)
+scale = Vector2(0.0851563, 0.0851563)
+texture = ExtResource("9_3erdt")
+
+[node name="PotionBottleContent" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(140, 133)
+scale = Vector2(0.208208, 0.208208)
+texture = ExtResource("3_t430h")
+
+[node name="46" type="Sprite2D" parent="Node2D/TextureButton"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(140, 91)
+scale = Vector2(0.0890625, 0.0890625)
+texture = ExtResource("11_qbf7n")

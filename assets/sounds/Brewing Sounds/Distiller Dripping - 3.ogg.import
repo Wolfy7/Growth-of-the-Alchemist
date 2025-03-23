@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dk4xhfi3d6iua"
+path="res://.godot/imported/Distiller Dripping - 3.ogg-5deaa622dd38ba1b5e3ede10932be360.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Distiller Dripping - 3.ogg"
+dest_files=["res://.godot/imported/Distiller Dripping - 3.ogg-5deaa622dd38ba1b5e3ede10932be360.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

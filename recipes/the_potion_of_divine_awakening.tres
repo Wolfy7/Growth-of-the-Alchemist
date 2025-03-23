@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=19 format=3 uid="uid://cnoidbwv2fhux"]
+
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="1_jy70w"]
+[ext_resource type="Resource" uid="uid://cgnh16re7cu66" path="res://ingredients/blue_root.tres" id="2_brsc7"]
+[ext_resource type="Resource" uid="uid://dubxn3aln21kd" path="res://ingredients/white_shroom.tres" id="3_ryktl"]
+[ext_resource type="Resource" uid="uid://bpiagj1r3o4s8" path="res://ingredients/snakeweed.tres" id="4_j6xnm"]
+[ext_resource type="Resource" uid="uid://cn3pq6kks4pjo" path="res://ingredients/red_berry.tres" id="5_rwoji"]
+[ext_resource type="Resource" uid="uid://cxd2h84b10wo8" path="res://ingredients/purple_leaf.tres" id="6_g0mdv"]
+[ext_resource type="Resource" uid="uid://b7u7160ltujqf" path="res://ingredients/sun_core.tres" id="7_skbk4"]
+[ext_resource type="Resource" uid="uid://cm6l63gbef0v8" path="res://ingredients/amber_moss.tres" id="8_7byat"]
+[ext_resource type="Resource" uid="uid://dkr31swsb4vbq" path="res://ingredients/thistle_of_dreams.tres" id="9_yb0j8"]
+[ext_resource type="Resource" uid="uid://cppigr1nbqkoy" path="res://ingredients/brown_nut.tres" id="10_5tfd1"]
+[ext_resource type="Resource" uid="uid://dfpfbq58la6x8" path="res://ingredients/blood_berries.tres" id="11_bll0e"]
+[ext_resource type="Resource" uid="uid://dfoww7gnwueq0" path="res://ingredients/blood_vein_tendril.tres" id="12_mpb24"]
+[ext_resource type="Resource" uid="uid://bbfyuxy8utcm1" path="res://ingredients/frost_crystal_algae.tres" id="13_uplil"]
+[ext_resource type="Resource" uid="uid://dvaqas1h71dt4" path="res://ingredients/gray_shroom.tres" id="14_p4b8j"]
+[ext_resource type="Resource" uid="uid://bjbld0nx48d34" path="res://ingredients/wisp_sprouts.tres" id="15_6lo2a"]
+[ext_resource type="Resource" uid="uid://b7jgn04tjeje" path="res://ingredients/nightclaw.tres" id="16_8g0of"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="17_0f5gi"]
+[ext_resource type="PackedScene" uid="uid://dmme5f1lm81yw" path="res://potions/poison_potion.tscn" id="17_brsc7"]
+
+[resource]
+script = ExtResource("17_0f5gi")
+name = "The potion of divine awakening"
+description = "Der Trank des göttlichen Erwachens
+
+Effekt: Gibt dem Trinker für eine kurze Zeit das Wissen aller alchemistischen Geheimnisse – mit unvorhersehbaren Konsequenzen."
+good = true
+ingredients = Array[ExtResource("1_jy70w")]([ExtResource("2_brsc7"), ExtResource("3_ryktl"), ExtResource("4_j6xnm"), ExtResource("5_rwoji"), ExtResource("6_g0mdv"), ExtResource("7_skbk4"), ExtResource("8_7byat"), ExtResource("9_yb0j8"), ExtResource("10_5tfd1"), ExtResource("11_bll0e"), ExtResource("12_mpb24"), ExtResource("13_uplil"), ExtResource("14_p4b8j"), ExtResource("15_6lo2a"), ExtResource("16_8g0of"), ExtResource("4_j6xnm")])
+potion = ExtResource("17_brsc7")
+color = Color(0, 0, 0, 1)
+metadata/_custom_type_script = "uid://bwpa7asr6ksif"

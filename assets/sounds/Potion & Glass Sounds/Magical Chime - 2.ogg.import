@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://badyhx6cdxrjl"
+path="res://.godot/imported/Magical Chime - 2.ogg-ac914eb11132e6cfb77ff60d07a9a554.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Potion & Glass Sounds/Magical Chime - 2.ogg"
+dest_files=["res://.godot/imported/Magical Chime - 2.ogg-ac914eb11132e6cfb77ff60d07a9a554.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

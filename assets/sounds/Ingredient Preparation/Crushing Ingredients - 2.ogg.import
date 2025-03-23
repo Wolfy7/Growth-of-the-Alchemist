@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db1m7ohuxsus"
+path="res://.godot/imported/Crushing Ingredients - 2.ogg-91eb933b5a6025e74bf29f15a36bfa8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Crushing Ingredients - 2.ogg"
+dest_files=["res://.godot/imported/Crushing Ingredients - 2.ogg-91eb933b5a6025e74bf29f15a36bfa8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

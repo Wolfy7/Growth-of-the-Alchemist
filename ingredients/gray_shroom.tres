@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://dvaqas1h71dt4"]
+
+[ext_resource type="Texture2D" uid="uid://4au044g1e7g2" path="res://assets/herbs/44.png" id="1_w0lyu"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_i53ia"]
+
+[resource]
+script = ExtResource("2_i53ia")
+name = "Pilz"
+color = Color(0.330846, 0.359896, 0.347081, 1)
+coloring = 0.8
+icon = ExtResource("1_w0lyu")
+tooltip = "Grauer Pilz"
+unknown = true
+level_unlock = 6
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

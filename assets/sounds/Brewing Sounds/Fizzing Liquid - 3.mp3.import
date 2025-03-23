@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jp72ptcy3xdd"
+path="res://.godot/imported/Fizzing Liquid - 3.mp3-66587c125014b4641eda3e44bc635132.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Fizzing Liquid - 3.mp3"
+dest_files=["res://.godot/imported/Fizzing Liquid - 3.mp3-66587c125014b4641eda3e44bc635132.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

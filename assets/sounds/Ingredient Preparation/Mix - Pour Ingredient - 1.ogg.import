@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7f03what1tiu"
+path="res://.godot/imported/Mix - Pour Ingredient - 1.ogg-1ba4a1c21766f19b83c2490bac5c3584.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Mix - Pour Ingredient - 1.ogg"
+dest_files=["res://.godot/imported/Mix - Pour Ingredient - 1.ogg-1ba4a1c21766f19b83c2490bac5c3584.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://svfiqywnr7p5"]
+
+[ext_resource type="Texture2D" uid="uid://cge430x61ach0" path="res://assets/herbs/23.png" id="1_ejyfk"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_kcwpp"]
+
+[resource]
+script = ExtResource("2_kcwpp")
+name = "Haze bark"
+color = Color(0.94902, 0.952941, 0.921569, 1)
+coloring = 0.6
+icon = ExtResource("1_ejyfk")
+tooltip = "Haze bark"
+unknown = true
+level_unlock = 4
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

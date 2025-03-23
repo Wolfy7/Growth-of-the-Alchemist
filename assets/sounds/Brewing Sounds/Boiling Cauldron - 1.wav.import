@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://rrfv6awpqw2a"
+path="res://.godot/imported/Boiling Cauldron - 1.wav-8bad9563b4f72172fbe3da9aadabcd74.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Boiling Cauldron - 1.wav"
+dest_files=["res://.godot/imported/Boiling Cauldron - 1.wav-8bad9563b4f72172fbe3da9aadabcd74.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

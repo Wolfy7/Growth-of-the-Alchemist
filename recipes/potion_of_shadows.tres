@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=6 format=3 uid="uid://cet46foab3vw1"]
+
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="1_a1tlp"]
+[ext_resource type="Resource" uid="uid://cllwqrvkrroer" path="res://ingredients/green_leaf.tres" id="2_qn1f3"]
+[ext_resource type="Resource" uid="uid://dtr8ta6f5lq3u" path="res://ingredients/gray_marrow_mushroom.tres" id="3_fi760"]
+[ext_resource type="PackedScene" uid="uid://c4day16is3wk1" path="res://potions/potion_of_shadows.tscn" id="4_1g481"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="5_0d0vc"]
+
+[resource]
+script = ExtResource("5_0d0vc")
+name = "Potion of shadows"
+description = "Trank der Schatten
+
+Effekt: Macht den Trinker in der Dämmerung schwerer sichtbar."
+good = true
+ingredients = Array[ExtResource("1_a1tlp")]([ExtResource("2_qn1f3"), ExtResource("3_fi760")])
+potion = ExtResource("4_1g481")
+color = Color(0, 0, 0, 1)
+metadata/_custom_type_script = "uid://bwpa7asr6ksif"

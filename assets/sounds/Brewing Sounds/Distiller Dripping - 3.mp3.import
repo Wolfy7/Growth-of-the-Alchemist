@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw0vh5l3r1rr8"
+path="res://.godot/imported/Distiller Dripping - 3.mp3-d0d5810aa0e868db52d863e7b94de355.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Distiller Dripping - 3.mp3"
+dest_files=["res://.godot/imported/Distiller Dripping - 3.mp3-d0d5810aa0e868db52d863e7b94de355.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

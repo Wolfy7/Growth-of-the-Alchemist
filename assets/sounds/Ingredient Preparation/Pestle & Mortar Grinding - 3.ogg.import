@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://druwk8pdrlgfq"
+path="res://.godot/imported/Pestle & Mortar Grinding - 3.ogg-c13f87f123901772e3de129a1cf52afe.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Pestle & Mortar Grinding - 3.ogg"
+dest_files=["res://.godot/imported/Pestle & Mortar Grinding - 3.ogg-c13f87f123901772e3de129a1cf52afe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

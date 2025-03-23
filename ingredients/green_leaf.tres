@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://cllwqrvkrroer"]
+
+[ext_resource type="Texture2D" uid="uid://bpl8jatm82vnp" path="res://assets/herbs/1.png" id="1_a52cx"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_o740j"]
+
+[resource]
+script = ExtResource("2_o740j")
+name = "Leaf from the tree of life"
+color = Color(0, 0.364729, 0, 1)
+coloring = 0.2
+icon = ExtResource("1_a52cx")
+tooltip = "Leaf from the tree of life"
+unknown = false
+level_unlock = 1
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

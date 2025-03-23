@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://c6cyhsbu0530m"]
+
+[ext_resource type="Texture2D" uid="uid://b4wnc6661aqhp" path="res://assets/plants/48.png" id="1_p846l"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_osipv"]
+
+[resource]
+script = ExtResource("2_osipv")
+name = "Shade vine green "
+color = Color(0.580392, 0.501961, 0.141176, 1)
+coloring = 0.6
+icon = ExtResource("1_p846l")
+tooltip = "Shade vine green "
+unknown = true
+level_unlock = 15
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

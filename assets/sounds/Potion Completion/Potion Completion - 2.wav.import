@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://badur1kqsvd6j"
+path="res://.godot/imported/Potion Completion - 2.wav-1bf765eef7f418ef2b8e270e82d24e0c.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Potion Completion/Potion Completion - 2.wav"
+dest_files=["res://.godot/imported/Potion Completion - 2.wav-1bf765eef7f418ef2b8e270e82d24e0c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

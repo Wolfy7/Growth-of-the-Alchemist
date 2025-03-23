@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=6 format=3 uid="uid://dee88k12us7rp"]
+
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="1_cspoq"]
+[ext_resource type="Resource" uid="uid://dfpfbq58la6x8" path="res://ingredients/blood_berries.tres" id="3_cspoq"]
+[ext_resource type="Resource" uid="uid://cllwqrvkrroer" path="res://ingredients/green_leaf.tres" id="3_ngcmu"]
+[ext_resource type="PackedScene" uid="uid://c21m8efypqr3f" path="res://potions/heal_potion.tscn" id="4_cspoq"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="5_g2ihc"]
+
+[resource]
+script = ExtResource("5_g2ihc")
+name = "Heiltrank"
+description = "[color=900101][u] Heiltrank
+ Elixier der Regeneration [/u][/color]
+
+[color=900101]E[/color]in funkelnd rotes Elixier, das in einer kunstvoll verzierten Glasphiole ruht. [color=900101]B[/color]eim Öffnen strömt ein süßlicher Duft nach Beeren und Kräutern hervor, vermischt mit einer geheimnisvollen magischen Aura. [color=900101]E[/color]in einziger Schluck dieses Trankes durchströmt den Körper mit wohltuender Wärme und schließt Wunden im Handumdrehen."
+good = true
+ingredients = Array[ExtResource("1_cspoq")]([ExtResource("3_ngcmu"), ExtResource("3_cspoq")])
+potion = ExtResource("4_cspoq")
+color = Color(0, 0, 0, 1)
+metadata/_custom_type_script = "uid://bwpa7asr6ksif"

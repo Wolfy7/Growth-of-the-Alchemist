@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://dkr31swsb4vbq"]
+
+[ext_resource type="Texture2D" uid="uid://dkqai5tassouo" path="res://assets/plants/42.png" id="1_rstns"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_tm11a"]
+
+[resource]
+script = ExtResource("2_tm11a")
+name = "Thistle of dreams"
+color = Color(0.909804, 0.298039, 0.823529, 1)
+coloring = 0.6
+icon = ExtResource("1_rstns")
+tooltip = "Thistle of dreams"
+unknown = true
+level_unlock = 10
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

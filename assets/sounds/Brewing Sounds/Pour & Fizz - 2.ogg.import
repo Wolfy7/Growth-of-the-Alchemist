@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bx3dlpbwibqae"
+path="res://.godot/imported/Pour & Fizz - 2.ogg-f84eeaf75cc2acb166754017c6124565.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Pour & Fizz - 2.ogg"
+dest_files=["res://.godot/imported/Pour & Fizz - 2.ogg-f84eeaf75cc2acb166754017c6124565.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

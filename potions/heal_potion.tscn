@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c21m8efypqr3f"]
+
+[ext_resource type="PackedScene" uid="uid://ugc26jiyd0ql" path="res://potion.tscn" id="1_qp85x"]
+[ext_resource type="Material" uid="uid://cia1one3ehv0t" path="res://shaders/potion.tres" id="2_sdyye"]
+
+[node name="Potion" instance=ExtResource("1_qp85x")]
+
+[node name="Potionshader" parent="." index="1"]
+material = ExtResource("2_sdyye")

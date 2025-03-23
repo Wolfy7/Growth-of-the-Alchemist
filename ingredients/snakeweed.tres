@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://bpiagj1r3o4s8"]
+
+[ext_resource type="Texture2D" uid="uid://cg2vvrqbtd0gi" path="res://assets/plants/19.png" id="1_rodjq"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_ykd7v"]
+
+[resource]
+script = ExtResource("2_ykd7v")
+name = "Snakeweed"
+color = Color(0.392157, 0.341176, 0.517647, 1)
+coloring = 0.5
+icon = ExtResource("1_rodjq")
+tooltip = "Snakeweed"
+unknown = true
+level_unlock = 11
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

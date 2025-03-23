@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://b7u7160ltujqf"]
+
+[ext_resource type="Texture2D" uid="uid://1r6qnki7gatw" path="res://assets/herbs/9.png" id="1_d0hvu"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_g0v6w"]
+
+[resource]
+script = ExtResource("2_g0v6w")
+name = "Sun core "
+color = Color(0.342201, 0.207648, 0, 1)
+coloring = 0.5
+icon = ExtResource("1_d0hvu")
+tooltip = "Sun core "
+unknown = true
+level_unlock = 2
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

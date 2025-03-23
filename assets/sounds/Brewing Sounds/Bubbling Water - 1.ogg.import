@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dh57janxh1hve"
+path="res://.godot/imported/Bubbling Water - 1.ogg-f96d6d3c2002f1b67622a7a8cc1a4113.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Bubbling Water - 1.ogg"
+dest_files=["res://.godot/imported/Bubbling Water - 1.ogg-f96d6d3c2002f1b67622a7a8cc1a4113.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://pep7csjrq55i"]
+
+[ext_resource type="Texture2D" uid="uid://di1w64bnmqluk" path="res://assets/herbs/41.png" id="1_gown5"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_tokak"]
+
+[resource]
+script = ExtResource("2_tokak")
+name = "Scarlet thorn"
+color = Color(0.419608, 0.196078, 0.14902, 1)
+coloring = 0.4
+icon = ExtResource("1_gown5")
+tooltip = "Scarlet thorn"
+unknown = true
+level_unlock = 7
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

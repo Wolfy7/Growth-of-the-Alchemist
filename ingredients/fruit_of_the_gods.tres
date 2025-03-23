@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://ddrum20uefp74"]
+
+[ext_resource type="Texture2D" uid="uid://cb5406xak3jku" path="res://assets/herbs/48.png" id="1_ybx3b"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_d2gpc"]
+
+[resource]
+script = ExtResource("2_d2gpc")
+name = "Fruit of the gods"
+color = Color(0.133333, 0.223529, 0.117647, 1)
+coloring = 0.2
+icon = ExtResource("1_ybx3b")
+tooltip = "Fruit of the gods"
+unknown = true
+level_unlock = 12
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Recipe" load_steps=5 format=3 uid="uid://b6iknl0a14nar"]
+
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="1_cfnvw"]
+[ext_resource type="Resource" uid="uid://cllwqrvkrroer" path="res://ingredients/green_leaf.tres" id="2_rpp0a"]
+[ext_resource type="Resource" uid="uid://b7u7160ltujqf" path="res://ingredients/sun_core.tres" id="3_ad870"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="4_enjom"]
+
+[resource]
+script = ExtResource("4_enjom")
+name = "Growth drops "
+description = "Wachstumstropfen
+
+Effekt: Beschleunigt das Pflanzenwachstum für kurze Zeit."
+good = true
+ingredients = Array[ExtResource("1_cfnvw")]([ExtResource("2_rpp0a"), ExtResource("3_ad870")])
+color = Color(0, 0, 0, 1)
+metadata/_custom_type_script = "uid://bwpa7asr6ksif"

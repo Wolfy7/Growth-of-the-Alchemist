@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://dfoww7gnwueq0"]
+
+[ext_resource type="Texture2D" uid="uid://svscpbfeok1r" path="res://assets/plants/46.png" id="1_yf4an"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_k1upi"]
+
+[resource]
+script = ExtResource("2_k1upi")
+name = "Blood vein tendril"
+color = Color(0.596078, 0.364706, 0.290196, 1)
+coloring = 0.4
+icon = ExtResource("1_yf4an")
+tooltip = "Blood vein tendril"
+unknown = true
+level_unlock = 14
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

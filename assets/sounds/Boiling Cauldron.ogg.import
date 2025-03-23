@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bv83qqo40femp"
+path="res://.godot/imported/Boiling Cauldron.ogg-2acdeff47f5e2a1d96fc7270ac874736.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Boiling Cauldron.ogg"
+dest_files=["res://.godot/imported/Boiling Cauldron.ogg-2acdeff47f5e2a1d96fc7270ac874736.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://cxd2h84b10wo8"]
+
+[ext_resource type="Texture2D" uid="uid://drs0u2v6v33kb" path="res://assets/herbs/42.png" id="1_fofdj"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_u6r48"]
+
+[resource]
+script = ExtResource("2_u6r48")
+name = "...."
+color = Color(0.835294, 0.584314, 0.564706, 1)
+coloring = 0.5
+icon = ExtResource("1_fofdj")
+tooltip = "...."
+unknown = true
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

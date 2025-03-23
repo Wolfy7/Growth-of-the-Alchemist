@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://cn3pq6kks4pjo"]
+
+[ext_resource type="Texture2D" uid="uid://dtvgdktgiigbi" path="res://assets/herbs/19.png" id="1_xpkq8"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_x67oj"]
+
+[resource]
+script = ExtResource("2_x67oj")
+name = "Blutbeeren"
+color = Color(0.803922, 0, 0, 1)
+coloring = 0.5
+icon = ExtResource("1_xpkq8")
+tooltip = "Blutbeeren 
+Diese roten Beeren enthalten eine Essenz, die in Heiltränken oder dunkler Blutmagie genutzt wird.
+"
+unknown = false
+level_unlock = 0
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

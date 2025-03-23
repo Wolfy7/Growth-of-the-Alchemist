@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ugc26jiyd0ql"]
+
+[ext_resource type="Texture2D" uid="uid://my8h8th0roxf" path="res://assets/potion_bottle_content.png" id="1_8parx"]
+[ext_resource type="Script" uid="uid://b3q32ganrcd1b" path="res://potion.gd" id="1_l3y02"]
+[ext_resource type="Texture2D" uid="uid://ddv20r6juylb5" path="res://assets/potionshader.png" id="3_l3y02"]
+[ext_resource type="Material" uid="uid://bmfchs3siqqhn" path="res://particles/red_starts.tres" id="5_l3y02"]
+
+[node name="Potion" type="Node2D"]
+script = ExtResource("1_l3y02")
+metadata/_edit_group_ = true
+
+[node name="PotionBottleContent" type="Sprite2D" parent="."]
+texture = ExtResource("1_8parx")
+
+[node name="Potionshader" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(0, 34.25)
+scale = Vector2(1.01351, 1.01181)
+texture = ExtResource("3_l3y02")
+region_rect = Rect2(0, 0, 148, 127)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+lifetime = 1.4
+preprocess = 2.0
+local_coords = true
+process_material = ExtResource("5_l3y02")

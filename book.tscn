@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=3 uid="uid://0qecwe14vshq"]
+
+[ext_resource type="Script" uid="uid://c4jm4vmxll0rk" path="res://book.gd" id="1_f0xhj"]
+[ext_resource type="Texture2D" uid="uid://1d0wbsuvvkep" path="res://assets/book.png" id="1_fijbg"]
+[ext_resource type="Script" uid="uid://bwpa7asr6ksif" path="res://recipe.gd" id="2_7wrkw"]
+[ext_resource type="Texture2D" uid="uid://dnsw7p4ggb04j" path="res://assets/return_idle.png" id="2_f0xhj"]
+[ext_resource type="Texture2D" uid="uid://mox1low8ikwj" path="res://assets/return_hover.png" id="3_3r6c0"]
+[ext_resource type="Resource" uid="uid://dee88k12us7rp" path="res://recipes/heiltrank.tres" id="3_gw1ob"]
+[ext_resource type="PackedScene" uid="uid://b3um5rwutllho" path="res://recipe.tscn" id="3_xeei7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7wrkw"]
+
+[node name="Book" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f0xhj")
+recipes = Array[ExtResource("2_7wrkw")]([ExtResource("3_gw1ob")])
+recipe_scene = ExtResource("3_xeei7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fijbg")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 56.0
+offset_right = 1144.0
+offset_bottom = 120.0
+texture_normal = ExtResource("2_f0xhj")
+texture_hover = ExtResource("3_3r6c0")
+
+[node name="TabBar" type="TabBar" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+current_tab = 0
+tab_count = 2
+tab_0/title = "1"
+tab_1/title = "2"
+
+[node name="TabContainer2" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 125.0
+offset_right = 1135.0
+offset_bottom = 665.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7wrkw")
+tab_alignment = 2
+tabs_position = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

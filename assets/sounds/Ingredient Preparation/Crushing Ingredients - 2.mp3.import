@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnmyj05jb7iq1"
+path="res://.godot/imported/Crushing Ingredients - 2.mp3-25bf7fb99c2f02f01b36b1c5580fdf57.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Crushing Ingredients - 2.mp3"
+dest_files=["res://.godot/imported/Crushing Ingredients - 2.mp3-25bf7fb99c2f02f01b36b1c5580fdf57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

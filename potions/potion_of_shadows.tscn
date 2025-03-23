@@ -1,0 +1,47 @@
+[gd_scene load_steps=10 format=3 uid="uid://c4day16is3wk1"]
+
+[ext_resource type="PackedScene" uid="uid://ugc26jiyd0ql" path="res://potion.tscn" id="1_d7ms7"]
+[ext_resource type="Shader" uid="uid://dljulhxugsnlm" path="res://shaders/potion.gdshader" id="2_susiq"]
+[ext_resource type="Texture2D" uid="uid://daek40j344sux" path="res://assets/particles/circle_04.png" id="3_4rn5h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lb5bw"]
+shader = ExtResource("2_susiq")
+shader_parameter/liquid_color = Color(0.0431373, 0.215686, 0.313726, 1)
+shader_parameter/wave_speed = 2.5
+shader_parameter/wave_amplitude = 8.0
+shader_parameter/noise_scale = 10.0
+shader_parameter/liquid_level = 0.7
+
+[sub_resource type="Gradient" id="Gradient_du33i"]
+offsets = PackedFloat32Array(0, 0.25, 0.433333, 0.722222, 1)
+colors = PackedColorArray(0.0431373, 0.215686, 0.313726, 1, 0.0980392, 0, 0.313726, 1, 0.0431373, 0.215686, 0.313726, 1, 0.113725, 0.0509804, 0.313726, 1, 0.0431373, 0.215686, 0.313726, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_rawfb"]
+gradient = SubResource("Gradient_du33i")
+
+[sub_resource type="Curve" id="Curve_rdobt"]
+_data = [Vector2(0.0107527, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_2gw42"]
+curve = SubResource("Curve_rdobt")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rguvs"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, 20, 0)
+emission_shape = 3
+emission_box_extents = Vector3(50, -50, 1)
+scale_min = 0.1
+scale_max = 0.1
+scale_curve = SubResource("CurveTexture_2gw42")
+color_ramp = SubResource("GradientTexture1D_rawfb")
+
+[node name="PotionOfShadows" instance=ExtResource("1_d7ms7")]
+
+[node name="Potionshader" parent="." index="1"]
+material = SubResource("ShaderMaterial_lb5bw")
+
+[node name="GPUParticles2D" parent="." index="2"]
+amount = 12
+texture = ExtResource("3_4rn5h")
+process_material = SubResource("ParticleProcessMaterial_rguvs")

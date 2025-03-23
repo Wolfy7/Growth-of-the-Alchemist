@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dna24xk8ceetd"
+path="res://.godot/imported/Mix - Pour Ingredient - 1.mp3-f7e4df868e5e30aa9cfdf1872d80d6f0.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Mix - Pour Ingredient - 1.mp3"
+dest_files=["res://.godot/imported/Mix - Pour Ingredient - 1.mp3-f7e4df868e5e30aa9cfdf1872d80d6f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

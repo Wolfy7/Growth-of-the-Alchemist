@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://b7jgn04tjeje"]
+
+[ext_resource type="Texture2D" uid="uid://drs0u2v6v33kb" path="res://assets/herbs/42.png" id="1_nhii3"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_unsx3"]
+
+[resource]
+script = ExtResource("2_unsx3")
+name = "Nightclaw"
+color = Color(0.835294, 0.584314, 0.564706, 1)
+coloring = 0.5
+icon = ExtResource("1_nhii3")
+tooltip = "Nightclaw"
+unknown = true
+level_unlock = 6
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

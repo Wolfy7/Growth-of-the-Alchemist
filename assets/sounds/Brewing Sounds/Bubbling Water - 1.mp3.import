@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b86u07on0wv7"
+path="res://.godot/imported/Bubbling Water - 1.mp3-3fe7eb13727da18bd91fc7cb7c34b869.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Bubbling Water - 1.mp3"
+dest_files=["res://.godot/imported/Bubbling Water - 1.mp3-3fe7eb13727da18bd91fc7cb7c34b869.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

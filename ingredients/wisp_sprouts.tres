@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://bjbld0nx48d34"]
+
+[ext_resource type="Texture2D" uid="uid://bf1uxoy6xnp4m" path="res://assets/herbs/47.png" id="1_fmj5l"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_t6yna"]
+
+[resource]
+script = ExtResource("2_t6yna")
+name = "Wisp sprouts"
+color = Color(0.203922, 0.85098, 0.858824, 1)
+coloring = 0.8
+icon = ExtResource("1_fmj5l")
+tooltip = "Wisp sprouts"
+unknown = true
+level_unlock = 13
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

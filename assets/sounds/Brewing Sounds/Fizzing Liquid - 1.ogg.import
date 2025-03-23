@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0s6rcun57hwc"
+path="res://.godot/imported/Fizzing Liquid - 1.ogg-a6b59f7393fc90d97d9b3f2447f7e485.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Fizzing Liquid - 1.ogg"
+dest_files=["res://.godot/imported/Fizzing Liquid - 1.ogg-a6b59f7393fc90d97d9b3f2447f7e485.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

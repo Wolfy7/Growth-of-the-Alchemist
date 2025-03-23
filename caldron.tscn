@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://dg4gsittjlxt2"]
+
+[ext_resource type="Script" uid="uid://c0ikxk0bkvhy5" path="res://caldron.gd" id="1_g4cxj"]
+[ext_resource type="Texture2D" uid="uid://vh0r8wqqp0xj" path="res://assets/kessel.png" id="1_m88bx"]
+[ext_resource type="Texture2D" uid="uid://qovh0b3sqi4w" path="res://assets/kessel-inhalt.png" id="2_g4cxj"]
+[ext_resource type="Texture2D" uid="uid://bku8vgjqd0om4" path="res://assets/particles/circle_05.png" id="4_nqkxi"]
+[ext_resource type="AudioStream" uid="uid://bv83qqo40femp" path="res://assets/sounds/Boiling Cauldron.ogg" id="5_tqg82"]
+[ext_resource type="AudioStream" uid="uid://4ubcttjuj7b" path="res://assets/sounds/Brewing Sounds/Drop & Fizz - 1.mp3" id="6_7qajs"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nqkxi"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(40, 1, 1)
+gravity = Vector3(0, -20, 0)
+scale_min = 0.0
+scale_max = 0.2
+
+[node name="Caldron" type="Node2D"]
+script = ExtResource("1_g4cxj")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -78.0
+offset_top = -62.0
+offset_right = 234.0
+offset_bottom = 187.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("1_m88bx")
+
+[node name="Kessel" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_m88bx")
+
+[node name="Liquid" type="Sprite2D" parent="."]
+position = Vector2(0, -44)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_g4cxj")
+
+[node name="LiquidParticels" type="GPUParticles2D" parent="."]
+position = Vector2(3, -48)
+amount = 12
+texture = ExtResource("4_nqkxi")
+lifetime = 2.65
+process_material = SubResource("ParticleProcessMaterial_nqkxi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_tqg82")
+autoplay = true
+
+[node name="IngredientSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_7qajs")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -10.0
+offset_right = 15.0
+offset_bottom = 23.0
+size_flags_horizontal = 4
+text = "2/2"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqnivutmqwjlf"
+path="res://.godot/imported/Stirring Liquid - 2.mp3-42a5cc0b716c92d73af00f5c8f71978a.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Stirring Liquid - 2.mp3"
+dest_files=["res://.godot/imported/Stirring Liquid - 2.mp3-42a5cc0b716c92d73af00f5c8f71978a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

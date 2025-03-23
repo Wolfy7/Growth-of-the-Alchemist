@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d26xe6pqk4l2g"
+path="res://.godot/imported/Potion Completion - 3.ogg-8c28f08aa1996e0652c178732e0a4aee.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Potion Completion/Potion Completion - 3.ogg"
+dest_files=["res://.godot/imported/Potion Completion - 3.ogg-8c28f08aa1996e0652c178732e0a4aee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://6fwa6yjn7ldj"
+path="res://.godot/imported/Distiller Dripping - 1.wav-a7f8e71acf538567e8d6dd1d7c0d5121.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Brewing Sounds/Distiller Dripping - 1.wav"
+dest_files=["res://.godot/imported/Distiller Dripping - 1.wav-a7f8e71acf538567e8d6dd1d7c0d5121.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

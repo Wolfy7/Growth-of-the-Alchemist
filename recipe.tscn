@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3um5rwutllho"]
+
+[ext_resource type="FontFile" uid="uid://uq8w0oieowxm" path="res://assets/fonts/MorrisRomanAlternate-Black.ttf" id="1_6eiay"]
+[ext_resource type="Script" uid="uid://rw8rs88hsdbh" path="res://recipe_page.gd" id="1_43k02"]
+[ext_resource type="Resource" uid="uid://dee88k12us7rp" path="res://recipes/heiltrank.tres" id="2_k52ho"]
+
+[node name="Recipe" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_43k02")
+recipe = ExtResource("2_k52ho")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 28.0
+offset_top = 7.0
+offset_right = -34.0
+offset_bottom = 426.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VFlowContainer" type="VFlowContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 80
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/VFlowContainer"]
+custom_minimum_size = Vector2(420, 400)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_6eiay")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/VFlowContainer/RichTextLabel2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -83.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_6eiay")
+theme_override_font_sizes/font_size = 32
+text = "Color: "
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/VFlowContainer/RichTextLabel2/Label"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 118.0
+offset_top = -34.0
+offset_right = -67.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VBoxContainer/VFlowContainer"]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_6eiay")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Ingredients (order):"
+fit_content = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VFlowContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/VFlowContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 340)
+layout_mode = 2
+size_flags_horizontal = 0
+columns = 5
+
+[node name="ColorRect2" type="ColorRect" parent="VBoxContainer/VFlowContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.678431, 0.533333, 0.337255, 0)
+
+[node name="Control" type="Control" parent="VBoxContainer/VFlowContainer/ColorRect2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 10.0
+offset_right = 50.0
+offset_bottom = 40.0
+grow_horizontal = 2

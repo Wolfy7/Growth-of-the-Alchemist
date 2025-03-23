@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ingredient" load_steps=3 format=3 uid="uid://dtr8ta6f5lq3u"]
+
+[ext_resource type="Texture2D" uid="uid://4au044g1e7g2" path="res://assets/herbs/44.png" id="1_mrrnx"]
+[ext_resource type="Script" uid="uid://babb1xjqgodpk" path="res://ingredient.gd" id="2_bxq2j"]
+
+[resource]
+script = ExtResource("2_bxq2j")
+name = "Gray marrow mushroom"
+color = Color(0.330846, 0.359896, 0.347081, 1)
+coloring = 0.8
+icon = ExtResource("1_mrrnx")
+tooltip = "Gray marrow mushroom"
+unknown = true
+level_unlock = 3
+level_master = 100
+metadata/_custom_type_script = "uid://babb1xjqgodpk"

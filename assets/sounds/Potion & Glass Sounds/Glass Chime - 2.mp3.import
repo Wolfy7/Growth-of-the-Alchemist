@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc16rbq6303q0"
+path="res://.godot/imported/Glass Chime - 2.mp3-d06e051767ece3d902a9453b09bbefb9.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Potion & Glass Sounds/Glass Chime - 2.mp3"
+dest_files=["res://.godot/imported/Glass Chime - 2.mp3-d06e051767ece3d902a9453b09bbefb9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://tug6f8fj8qxe"
+path="res://.godot/imported/Crushing Ingredients - 5.wav-d2995c3035a989cd2f92c7c68861ff19.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Crushing Ingredients - 5.wav"
+dest_files=["res://.godot/imported/Crushing Ingredients - 5.wav-d2995c3035a989cd2f92c7c68861ff19.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://de0ybwihutg0w"
+path="res://.godot/imported/Hand-Mix Ingredients - 1.wav-e23848a70d12c74c2efab0814cc3e043.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Ingredient Preparation/Hand-Mix Ingredients - 1.wav"
+dest_files=["res://.godot/imported/Hand-Mix Ingredients - 1.wav-e23848a70d12c74c2efab0814cc3e043.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
