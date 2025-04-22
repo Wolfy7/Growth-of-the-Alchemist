@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://dvotasy62kc2o" path="res://ingredient_button.gd" id="1_2iuho"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0y3nj"]
-load_path = "res://.godot/imported/bg.png-23a59c2e9cba2223a50fa3fe41b70b25.ctex"
 
 [node name="IngredientButton" type="TextureButton"]
 anchors_preset = 15

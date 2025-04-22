@@ -78,3 +78,8 @@ func _on_button_pressed() -> void:
 	else:
 		GameManager.tutorial_done = true
 		queue_free()  # Entfernt das Tutorial
+
+
+func _on_skip_tutorial_button_pressed() -> void:
+		GameManager.tutorial_done = true
+		queue_free() 
