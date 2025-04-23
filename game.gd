@@ -26,7 +26,8 @@ extends Node
 @onready var game_over_recipes: RichTextLabel = $GameOver/TextureRect/GameOverRecipes
 @onready var tutorial: CanvasLayer = $Tutorial
 
-@onready var texture_progress_bar: TextureProgressBar = $CanvasLayer/XpBar/HBoxContainer/TextureProgressBar
+@onready var xp_bar: Control = $CanvasLayer/XpBar
+
 
 const CHAOS_POTION: Resource = preload("res://potions/chaos_potion.tscn")
 
@@ -36,15 +37,8 @@ var known_ingredients: Array[Ingredient] = []
 var current_quest: Recipe
 
 func update_progress_bar() -> void:
-	var min: int = GameManager.level_xp[GameManager.level][0]
-	var max: int = GameManager.level_xp[GameManager.level + 1][1]
-	var current_value: float = texture_progress_bar.value 
-	texture_progress_bar.min_value = float(min)
-	texture_progress_bar.max_value = float(max)
-	var tween = get_tree().create_tween()
-	tween.tween_property(texture_progress_bar, "value", float(GameManager.xp), 0.5)
-	tween.play()
-	texture_progress_bar.value = float(GameManager.xp)
+	prints("update_progress_bar", GameManager.level_xp[GameManager.level][0], GameManager.level_xp[GameManager.level][1], GameManager.xp)
+	xp_bar.update_xp_bar()
 
 func _ready() -> void:
 	print(GameManager.level)
@@ -74,7 +68,6 @@ func _ready() -> void:
 	unlock_ingredients()
 	update_ingredients()
 	udapte_caldron_label()
-	update_progress_bar()
 	print("Size ",known_ingredients.size())
 
 func udapte_caldron_label() -> void:
@@ -96,8 +89,8 @@ func gain_xp(xp: int) -> bool:
 	 
 	print("gain_xp:",xp)
 	GameManager.xp += xp
-	print("GameManager.xp:",GameManager.xp, "Next level xp: ", GameManager.level_xp[(GameManager.level + 1)][0])
-	if GameManager.xp >= GameManager.level_xp[(GameManager.level + 1)][0]:
+	print("GameManager.xp:",GameManager.xp, "Next level xp: ", GameManager.level_xp[GameManager.level][1])
+	if GameManager.xp >= GameManager.level_xp[GameManager.level][1]:
 		print("LEVEL UP")
 		GameManager.level += 1
 		level_up()
